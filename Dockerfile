@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY $(pwd) /app/
+COPY /Users/agopalakrishnan/DockerProdApp/frontend/ /app/
 
 RUN npm build
 
