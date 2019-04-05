@@ -2,11 +2,11 @@ FROM node:alpine as buider
 
 WORKDIR '/app'
 
-COPY package*.json ./
+COPY package.json .
 
 RUN npm install
 
-COPY /Users/agopalakrishnan/DockerProdApp/frontend/ /app/
+COPY . .
 
 RUN npm build
 
